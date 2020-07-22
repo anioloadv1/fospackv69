@@ -37,8 +37,8 @@ cd $PWD/nginx-1.19.1
 --with-debug \
 --with-stream_ssl_module \
 --with-threads \
---add-module=../mods/ngx_devel_kit \
---add-module=../mods/nginx-rtmp-module-1.2.1
+--add-module=/fospackv69/nginx-builder/mods/ngx_devel_kit \
+--add-module=/fospackv69/nginx-builder/mods/nginx-rtmp-module-1.2.1
 make -j`nproc`
 make install
 make clean
