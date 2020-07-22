@@ -1,3 +1,3 @@
-[submodule "nginx-rtmp-module"] 
-  path = nginx-rtmp-module 
-  url = git://github.com/sergey-dryabzhinsky/nginx-rtmp-module.git
+[submodule "nginx-builder/mods/nginx-rtmp-module"]
+	path = nginx-builder/mods/nginx-rtmp-module
+	url = https://github.com/sergey-dryabzhinsky/nginx-rtmp-module.git
