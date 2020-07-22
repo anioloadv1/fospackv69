@@ -1,8 +1,9 @@
 #!/bin/bash
-$PWD/nginx-1.19.1/configure \
+cd $PWD/nginx-1.19.1
+./configure \
 --user=fosstreaming \
 --group=fosstreaming \
---prefix=/home/fos-streaming/fos/nginx
+--prefix=/home/fos-streaming/fos/nginx \
 --sbin-path=/home/fos-streaming/fos/nginx/sbin/nginx            \
 --conf-path=/home/fos-streaming/fos/nginx/conf/nginx.conf       \
 --pid-path=/home/fos-streaming/fos/nginx/pid/nginx.pid         \
@@ -36,5 +37,5 @@ $PWD/nginx-1.19.1/configure \
 --with-debug \
 --with-stream_ssl_module \
 --with-threads \
---add-module=$PWD/mods/ngx_devel_kit \
---add-module=$PWD/mods/nginx-rtmp-module-1.2.1
+--add-module=../mods/ngx_devel_kit \
+--add-module=../mods/nginx-rtmp-module-1.2.1
