@@ -39,3 +39,7 @@ cd $PWD/nginx-1.19.1
 --with-threads \
 --add-module=../mods/ngx_devel_kit \
 --add-module=../mods/nginx-rtmp-module-1.2.1
+make -j`nproc`
+make install
+make clean
+rm -Rf /home/fos-streaming/fos/nginx/sbin/nginx_fos; ln -sf /home/fos-streaming/fos/nginx/sbin/nginx /home/fos-streaming/fos/nginx/sbin/nginx_fos
